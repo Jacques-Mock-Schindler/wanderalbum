@@ -1,0 +1,11 @@
+---
+title: "Wanderungen 2025"
+date-format: DD.MM.YYYY
+listing:
+  contents: 
+    - "2025/**/*.ipynb"
+    - "2025/**/*.md"
+    - "2025/**/*.qmd"
+  type: table
+  sort: date
+---

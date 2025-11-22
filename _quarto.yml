@@ -1,0 +1,33 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "wanderalbum"
+  navbar:
+    right:
+      - text: Home
+        href: index.qmd
+      - text: Wanderungen
+        href: files/2025.qmd
+        
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+    code-line-numbers: true
+  pdf:
+    pdf-engine: xelatex
+    pdf-engine-opts:
+      - -shell-escape
+    mainfont: Arial
+    fontsize: 11pt
+    documentclass: scrartcl
+    classoption: a4paper
+    toc: false   
+    
+  

@@ -1,0 +1,5 @@
+author: "Jacques Mock Schindler"
+date: 2025-06-17
+date-format: DD.MM.YYYY
+execute: 
+  echo: false

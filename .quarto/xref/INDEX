@@ -1,0 +1,22 @@
+{
+  "about.qmd": {
+    "about.html": "ddf2d9d5",
+    "about.tex": "f1a955b5"
+  },
+  "files/2025/guscha.ipynb": {
+    "guscha.html": "978f2c89",
+    "guscha.tex": "65937e27"
+  },
+  "files/2025.qmd": {
+    "2025.html": "4e5694a2",
+    "2025.tex": "8c617840"
+  },
+  "index.qmd": {
+    "index.html": "288b2b20",
+    "index.tex": "13357943"
+  },
+  "files/2025/250617_oberengadin/oberengadin.ipynb": {
+    "oberengadin.html": "4c43e22a",
+    "oberengadin.tex": "41fee910"
+  }
+}
