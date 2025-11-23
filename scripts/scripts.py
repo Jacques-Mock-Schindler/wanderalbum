@@ -87,11 +87,11 @@ def create_map(middle, path, title, width=800, height=600):
     # Als temporäre HTML-Datei speichern
     tempfile = 'temp_map_export.html'
     output_filename = 'map_output.png'
-    print(f"Speichere temporäre HTML-Datei: {tempfile}")
+    # print(f"Speichere temporäre HTML-Datei: {tempfile}")
     m.save(tempfile)
 
     # Screenshot mit Selenium erstellen
-    print("Erstelle Screenshot mit Chrome (headless)...")
+    # print("Erstelle Screenshot mit Chrome (headless)...")
     options = Options()
     options.add_argument('--headless')
     options.add_argument('--no-sandbox')
@@ -104,9 +104,9 @@ def create_map(middle, path, title, width=800, height=600):
         time.sleep(3)  # Warten bis Karte vollständig geladen ist
         driver.save_screenshot(output_filename)
         driver.quit()
-        print(f"✓ PNG erfolgreich erstellt: {output_filename}")
+        # print(f"✓ PNG erfolgreich erstellt: {output_filename}")
     except Exception as e:
-        print(f"✗ Fehler beim Erstellen des Screenshots: {e}")
+        # print(f"✗ Fehler beim Erstellen des Screenshots: {e}")
         if os.path.exists(tempfile):
             os.remove(tempfile)
         sys.exit(1)
@@ -114,9 +114,9 @@ def create_map(middle, path, title, width=800, height=600):
     # Aufräumen
     if os.path.exists(tempfile):
         os.remove(tempfile)
-        print("Temporäre HTML-Datei gelöscht")
+        # print("Temporäre HTML-Datei gelöscht")
 
-    print(f"\\nFertig! Die Karte wurde als '{output_filename}' gespeichert.")
+    # print(f"\\nFertig! Die Karte wurde als '{output_filename}' gespeichert.")
 
     return m
 
