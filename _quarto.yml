@@ -21,6 +21,9 @@ format:
     toc: true
     code-line-numbers: true
   pdf:
+    include-in-header:
+      text: |
+        \usepackage[labelformat=empty]{caption}
     pdf-engine: xelatex
     pdf-engine-opts:
       - -shell-escape
