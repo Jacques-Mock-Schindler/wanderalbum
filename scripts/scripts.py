@@ -349,21 +349,37 @@ def create_swisstopo_url(center, gpx_url):
             + "&z=6&bgLayer=ch.swisstopo.pixelkarte-farbe&topic=ech&layers=GPX|" 
             + gpx_url)
 
-def qr_code(middle, url_github):
-    # Der Swisstopo-Link (mit GPX-Track)
-    swisstopo_url = create_swisstopo_url(middle, url_github)
+def generate_qr_code_for_url(url: str):
+    """
+    Generiert einen simplen (schwarz-weiß) QR-Code für eine URL
+    und speichert ihn als Bilddatei (PNG).
 
-    # QR-Code erstellen
-    qr = qrcode.QRCode(
-        version=1,
-        error_correction=qrcode.constants.ERROR_CORRECT_L,
-        box_size=10,
-        border=4,
-    )
+    Args:
+        url (str): Die URL, die im QR-Code codiert werden soll.
+        filename (str): Der Name der Ausgabedatei (z.B. 'qr_code.png').
+    """
+    try:
+        # 1. QR-Code-Generator-Objekt erstellen
+        qr = qrcode.QRCode(
+            version=1,
+            error_correction=qrcode.constants.ERROR_CORRECT_L, # Fehlerkorrektur
+            box_size=10, # Größe der einzelnen Pixel
+            border=4,    # Größe des weißen Rands
+        )
 
-    qr.add_data(swisstopo_url)
-    qr.make(fit=True)
+        # 2. Daten (URL) hinzufügen und Code generieren lassen
+        qr.add_data(url)
+        qr.make(fit=True)
 
-    # Als Bild speichern
-    img = qr.make_image(fill_color="black", back_color="white")
-    img.save("qr_tag.png")
+        # 3. Das schlichte QR-Code-Bild erstellen (Standard-Methode)
+        # fill_color: Farbe der Quadrate (z.B. Schwarz)
+        # back_color: Farbe des Hintergrunds (z.B. Weiß)
+        img = qr.make_image(fill_color="black", back_color="white")
+
+        # 4. Bild speichern
+        img.save("qr_tag.png")
+        
+
+    except Exception as e:
+        print(f"❌ Ein Fehler ist aufgetreten: {e}")
+    
