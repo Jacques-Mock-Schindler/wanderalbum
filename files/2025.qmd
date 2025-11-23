@@ -9,3 +9,5 @@ listing:
   type: table
   sort: date
 ---
+
+Zwischen den Frühlings- und Sommerferien 2025 konnte ich einen Dienstaltersurlaub beziehen. In dieser Zeit haben wir etliche Wanderungen in der ganzen Schweiz gemacht. Dies hier ist ein Versuch, diese Wanderungen zu dokumentieren.
