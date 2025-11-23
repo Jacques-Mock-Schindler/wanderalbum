@@ -173,7 +173,7 @@ def profile(path):
     plt.savefig('elevation_profile.png', dpi=150, bbox_inches='tight')
     plt.close()
 
-def qr_code(middleurl_github):
+def qr_code(middle, url_github):
     # Der Swisstopo-Link (mit GPX-Track)
     swisstopo_url = ("https://map.geo.admin.ch/#/map?lang=de&center=" 
                      + str(middle[0]) + "," 
