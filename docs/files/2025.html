@@ -23,7 +23,7 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -98,6 +98,9 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -168,9 +171,9 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    </div>
+    <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="2025.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -193,6 +196,307 @@ window.Quarto = {
 </header>
 
 
+<p>Zwischen den Frühlings- und Sommerferien 2025 konnte ich einen Dienstaltersurlaub beziehen. In dieser Zeit haben wir etliche Wanderungen in der ganzen Schweiz gemacht. Dies hier ist ein Versuch, diese Wanderungen zu dokumentieren.</p>
+<div id="ea179464" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display" data-execution_count="9">
+<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -&gt; Trust Notebook</span><iframe srcdoc="<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; />
+    <script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;></script>
+    <script src=&quot;https://code.jquery.com/jquery-3.7.1.min.js&quot;></script>
+    <script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;></script>
+    <script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js&quot;></script>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css&quot;/>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css&quot;/>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css&quot;/>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css&quot;/>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css&quot;/>
+    <link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css&quot;/>
+    
+            <meta name=&quot;viewport&quot; content=&quot;width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; />
+            <style>
+                #map_89e652c437c53982ed5ea2e57d137483 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class=&quot;folium-map&quot; id=&quot;map_89e652c437c53982ed5ea2e57d137483&quot; ></div>
+        
+</body>
+<script>
+    
+    
+            var map_89e652c437c53982ed5ea2e57d137483 = L.map(
+                &quot;map_89e652c437c53982ed5ea2e57d137483&quot;,
+                {
+                    center: [46.8182, 8.2275],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  &quot;zoom&quot;: 8,
+  &quot;zoomControl&quot;: true,
+  &quot;preferCanvas&quot;: false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a6f0fae8f6445ed06bcda93b99163b31 = L.tileLayer(
+                &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
+                {
+  &quot;minZoom&quot;: 0,
+  &quot;maxZoom&quot;: 19,
+  &quot;maxNativeZoom&quot;: 19,
+  &quot;noWrap&quot;: false,
+  &quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;,
+  &quot;subdomains&quot;: &quot;abc&quot;,
+  &quot;detectRetina&quot;: false,
+  &quot;tms&quot;: false,
+  &quot;opacity&quot;: 1,
+}
+
+            );
+        
+    
+            tile_layer_a6f0fae8f6445ed06bcda93b99163b31.addTo(map_89e652c437c53982ed5ea2e57d137483);
+        
+    
+            var marker_c51776b37471a04819af2daa2bc1f6ce = L.marker(
+                [46.57615684863781, 9.919649212956022],
+                {
+}
+            ).addTo(map_89e652c437c53982ed5ea2e57d137483);
+        
+    
+            var icon_65d3f01e5e921af8b58df6a85a14be67 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;red&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;info-sign&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+        var popup_deec89edb8148d851ee18bab71fc2047 = L.popup({
+  &quot;maxWidth&quot;: &quot;100%&quot;,
+});
+
+        
+            
+                var html_1db48416b7b402d6060999723e651aef = $(`<div id=&quot;html_1db48416b7b402d6060999723e651aef&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>Oberengadin</b><br>Kunstwanderung Hotel Castel</div>`)[0];
+                popup_deec89edb8148d851ee18bab71fc2047.setContent(html_1db48416b7b402d6060999723e651aef);
+            
+        
+
+        marker_c51776b37471a04819af2daa2bc1f6ce.bindPopup(popup_deec89edb8148d851ee18bab71fc2047)
+        ;
+
+        
+    
+    
+            marker_c51776b37471a04819af2daa2bc1f6ce.bindTooltip(
+                `<div>
+                     Oberengadin
+                 </div>`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_c51776b37471a04819af2daa2bc1f6ce.setIcon(icon_65d3f01e5e921af8b58df6a85a14be67);
+            
+    
+            var marker_4b3c4f6d75839323c1dc524d1d0c530b = L.marker(
+                [46.773898466509586, 8.738665885238962],
+                {
+}
+            ).addTo(map_89e652c437c53982ed5ea2e57d137483);
+        
+    
+            var icon_426ad56cddb9547f4e31c0a8e478b975 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;red&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;info-sign&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+        var popup_9680b79589fd0ef1dda5188f0a574f3a = L.popup({
+  &quot;maxWidth&quot;: &quot;100%&quot;,
+});
+
+        
+            
+                var html_592eabbdd90e674807d329645fd0591c = $(`<div id=&quot;html_592eabbdd90e674807d329645fd0591c&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>Maderanertal</b><br>Bristen - Golzeren</div>`)[0];
+                popup_9680b79589fd0ef1dda5188f0a574f3a.setContent(html_592eabbdd90e674807d329645fd0591c);
+            
+        
+
+        marker_4b3c4f6d75839323c1dc524d1d0c530b.bindPopup(popup_9680b79589fd0ef1dda5188f0a574f3a)
+        ;
+
+        
+    
+    
+            marker_4b3c4f6d75839323c1dc524d1d0c530b.bindTooltip(
+                `<div>
+                     Maderanertal
+                 </div>`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_4b3c4f6d75839323c1dc524d1d0c530b.setIcon(icon_426ad56cddb9547f4e31c0a8e478b975);
+            
+    
+            var marker_5c505b88c0440a925a108d8e6d3bab2b = L.marker(
+                [47.36736392732353, 7.788661876317193],
+                {
+}
+            ).addTo(map_89e652c437c53982ed5ea2e57d137483);
+        
+    
+            var icon_ac9b99ebb8c1fc18d92e1d9c2d033e5a = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;red&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;info-sign&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+        var popup_81049ea42756130c0a154da28a3b408b = L.popup({
+  &quot;maxWidth&quot;: &quot;100%&quot;,
+});
+
+        
+            
+                var html_42f4a3517fca5576767338da791ee231 = $(`<div id=&quot;html_42f4a3517fca5576767338da791ee231&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>Haustein</b><br>Fortifikation Haustein</div>`)[0];
+                popup_81049ea42756130c0a154da28a3b408b.setContent(html_42f4a3517fca5576767338da791ee231);
+            
+        
+
+        marker_5c505b88c0440a925a108d8e6d3bab2b.bindPopup(popup_81049ea42756130c0a154da28a3b408b)
+        ;
+
+        
+    
+    
+            marker_5c505b88c0440a925a108d8e6d3bab2b.bindTooltip(
+                `<div>
+                     Haustein
+                 </div>`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_5c505b88c0440a925a108d8e6d3bab2b.setIcon(icon_ac9b99ebb8c1fc18d92e1d9c2d033e5a);
+            
+    
+            var marker_c7bc205fe35bf37644d54f50a12153a3 = L.marker(
+                [47.025242926843944, 9.533540870791489],
+                {
+}
+            ).addTo(map_89e652c437c53982ed5ea2e57d137483);
+        
+    
+            var icon_b03aaea2c323e20a76c696f521d93e39 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;red&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;info-sign&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+        var popup_b1ca89642ac0aaac489d69e9ec96edaf = L.popup({
+  &quot;maxWidth&quot;: &quot;100%&quot;,
+});
+
+        
+            
+                var html_94134b1c0ee66adc50a78afe7e64a6da = $(`<div id=&quot;html_94134b1c0ee66adc50a78afe7e64a6da&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;><b>Guscha</b><br>Balzers - Guscha - Malans</div>`)[0];
+                popup_b1ca89642ac0aaac489d69e9ec96edaf.setContent(html_94134b1c0ee66adc50a78afe7e64a6da);
+            
+        
+
+        marker_c7bc205fe35bf37644d54f50a12153a3.bindPopup(popup_b1ca89642ac0aaac489d69e9ec96edaf)
+        ;
+
+        
+    
+    
+            marker_c7bc205fe35bf37644d54f50a12153a3.bindTooltip(
+                `<div>
+                     Guscha
+                 </div>`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_c7bc205fe35bf37644d54f50a12153a3.setIcon(icon_b03aaea2c323e20a76c696f521d93e39);
+            
+</script>
+</html>" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe></div></div>
+</div>
+</div>
+<div style="margin-bottom: 5mm;">
+
+</div>
 
 
 
@@ -256,7 +560,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="1" data-listing-date-sort="1751148000000" data-listing-file-modified-sort="1763912413582" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="115" data-listing-title-sort="Bristen - Golzeren" data-listing-filename-sort="maderanertal.ipynb">
+<tr data-index="1" data-listing-date-sort="1751148000000" data-listing-file-modified-sort="1763985400802" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="115" data-listing-title-sort="Bristen - Golzeren" data-listing-filename-sort="maderanertal.ipynb">
 <td>
 <span class="listing-date">29.06.2025</span>
 </td>
@@ -269,7 +573,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="2" data-listing-date-sort="1751752800000" data-listing-file-modified-sort="1763916231978" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="121" data-listing-title-sort="Wanderung entlang der Fortifikation Hauenstein" data-listing-filename-sort="hauenstein.ipynb">
+<tr data-index="2" data-listing-date-sort="1751752800000" data-listing-file-modified-sort="1763985400946" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="121" data-listing-title-sort="Wanderung entlang der Fortifikation Hauenstein" data-listing-filename-sort="hauenstein.ipynb">
 <td>
 <span class="listing-date">06.07.2025</span>
 </td>
@@ -282,7 +586,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="3" data-listing-date-sort="1752271200000" data-listing-file-modified-sort="1763983865819" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="77" data-listing-title-sort="Balzers - Guscha - Malans" data-listing-filename-sort="guscha.ipynb">
+<tr data-index="3" data-listing-date-sort="1752271200000" data-listing-file-modified-sort="1763985401359" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="77" data-listing-title-sort="Balzers - Guscha - Malans" data-listing-filename-sort="guscha.ipynb">
 <td>
 <span class="listing-date">12.07.2025</span>
 </td>
