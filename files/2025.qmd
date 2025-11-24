@@ -12,3 +12,55 @@ listing:
 
 Zwischen den Frühlings- und Sommerferien 2025 konnte ich einen Dienstaltersurlaub beziehen. In dieser Zeit haben wir etliche Wanderungen in der ganzen Schweiz gemacht. Dies hier ist ein Versuch, diese Wanderungen zu dokumentieren.
 
+```{python}
+#| echo: false
+import folium
+from pyproj import Transformer
+
+# Funktion zur Umwandlung von Swissgrid (LV95) zu WGS84
+def swissgrid_to_wgs84(east, north):
+    """
+    Wandelt Swissgrid LV95 Koordinaten (EPSG:2056) in WGS84 (EPSG:4326) um.
+    
+    Parameters:
+    east: Easting (X-Koordinate in Meter)
+    north: Northing (Y-Koordinate in Meter)
+    
+    Returns:
+    (latitude, longitude) Tuple
+    """
+    transformer = Transformer.from_crs("EPSG:2056", "EPSG:4326", always_xy=True)
+    lon, lat = transformer.transform(east, north)
+    return lat, lon
+
+# Karte der Schweiz erstellen
+schweiz_karte = folium.Map(
+    location=[46.8182, 8.2275],
+    zoom_start=8,
+    tiles='OpenStreetMap'
+)
+
+# Beispiel POIs (Swissgrid LV95 Koordinaten)
+# Format: (Name, East, North, Beschreibung)
+pois = [
+    ("Oberengadin", 2790156.34,1161326.78, "Kunstwanderung Hotel Castel"),
+    ("Maderanertal", 2699288.13, 1181124.54, "Bristen - Golzeren"),
+    ("Haustein", 2626440.19, 1246339.08, "Fortifikation Haustein"),
+    ("Guscha", 2759237.84, 1210369.98, "Balzers - Guscha - Malans"),
+]
+
+# POIs auf der Karte anzeigen
+for name, east, north, beschreibung in pois:
+    lat, lon = swissgrid_to_wgs84(east, north)
+    folium.Marker(
+        location=[lat, lon],
+        popup=f"<b>{name}</b><br>{beschreibung}",
+        tooltip=name,
+        icon=folium.Icon(color='red', icon='info-sign')
+    ).add_to(schweiz_karte)
+
+schweiz_karte
+```
+
+<div style="margin-bottom: 5mm;"></div>
+
