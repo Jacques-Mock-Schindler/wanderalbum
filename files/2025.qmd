@@ -47,6 +47,7 @@ pois = [
     ("Maderanertal", 2699288.13, 1181124.54, "Bristen - Golzeren"),
     ("Haustein", 2626440.19, 1246339.08, "Fortifikation Haustein"),
     ("Guscha", 2759237.84, 1210369.98, "Balzers - Guscha - Malans"),
+    ("Appenzell", 2750416.08, 1248462.41, "Appenzell - Trogen")
 ]
 
 # POIs auf der Karte anzeigen
