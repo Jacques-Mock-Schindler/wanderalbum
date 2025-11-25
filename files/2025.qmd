@@ -48,7 +48,8 @@ pois = [
     ("Haustein", 2626440.19, 1246339.08, "Fortifikation Haustein"),
     ("Guscha", 2759237.84, 1210369.98, "Balzers - Guscha - Malans"),
     ("Appenzell", 2750416.08, 1248462.41, "Appenzell - Trogen"),
-    ("Malanser Älpli", 2766069.16, 1209510.95, "Malanser Älpli - Seewis")
+    ("Malanser Älpli", 2766069.16, 1209510.95, "Malanser Älpli - Seewis"),
+    ("Faido", 2702430.57, 1148836.93, "Rundwanderung Faido - Dalpe - Faido")
 ]
 
 # POIs auf der Karte anzeigen
